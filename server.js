@@ -39,7 +39,7 @@ app.post('/users', (req, res) => {
 })
 app.post('/books', (req, res) => {
     let data = req.query;
-	let item = {titulo: data.titulo, autor: data.autor},
+	let item = {titulo: data.titulo, autor: data.autor};
     users.push(item)
     res.send("New user add")
 })
